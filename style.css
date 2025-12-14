@@ -4,50 +4,116 @@
 }
 
 header{
-    background-image: url(images/header\ img.webp);
-    background-attachment: fixed;
     height: 12vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(
+        135deg,
+        #ffd1dc,
+        #f8a1c4,
+        #f3c6d9
+    );
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 header nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header nav ul{
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 35px;
     padding: 30px;
-    list-style-type: none;
-    z-index: 1;
-
+    list-style: none;
 }
 
 nav ul li a{
     text-decoration: none;
-    color: black;
-    border: none;
-    background-color: white;
-    padding: 10px;
-    border-radius: 20px;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-family: "Rubik Dirt", system-ui;
-    transition: 0.5s ease;
+    color: #3b1d2a;
+    background: rgba(255,255,255,0.7);
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover{
-    background-color: #E75480;
-    color: black;
+    background: linear-gradient(135deg, #ffd1e8, #ff6fae);
+    color: white;
+    box-shadow: 0 6px 15px rgba(231,84,128,0.5);
 }
 
 nav img{
-    padding: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    margin-left: 25px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=1600");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.hero-content {
+  max-width: 500px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 100px;
+  margin-bottom: 15px;
+  font-family: "Rubik Dirt", system-ui;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", serif;
+}
+
+.hero-btn {
+  text-decoration: none;
+  background-color: pink;
+  color: black;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  transition: 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.hero-btn:hover {
+  background: linear-gradient(135deg, #ffd1e8, #ff6fae);
+  color: white;
+}
+
+.l-p > .latest{
+    text-align: center;
+    font-family: "Rubik Dirt", system-ui;
 }
 
 .card-container {
@@ -112,11 +178,13 @@ nav img{
     border-radius: 10px;
     cursor: pointer;
     font-size: 20px;
+    font-weight: 500;
     transition: all 0.3s ease;
-    font-family: "Rubik Dirt", system-ui;
+    font-family: "Poppins", sans-serif;
 }
 
 .card .info .order-btn:hover{
-    background-color: #E75480;
+    background: linear-gradient(135deg, #ffd1e8, #ff6fae);
+    color: black;
     border-bottom: 5px solid black;
 }
